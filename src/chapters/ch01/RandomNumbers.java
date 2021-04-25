@@ -16,7 +16,7 @@ public class RandomNumbers {
         int ctr = 0;
         while (ctr < numberOfNums) {
             System.out.println(r.nextInt(Integer.MAX_VALUE)); // prevent integer overflow
-            ctr += 1;
+            ctr++;
         }
     }
 }
