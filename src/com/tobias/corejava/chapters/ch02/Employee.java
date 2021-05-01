@@ -1,5 +1,11 @@
 package com.tobias.corejava.chapters.ch02;
 
+/**
+ * Class representing an <code>Employee</code>.
+ *
+ * @author Tobias
+ * @version 1.1
+ */
 public class Employee {
     // there is only one such var per class, aka class variable
     private static int lastId;
@@ -18,6 +24,13 @@ public class Employee {
     }
 
     // constructor
+
+    /**
+     *
+     * @param name Name of person.
+     * @param age Age of person.
+     * @param salary Salary of employee.
+     */
     public Employee(String name, int age, double salary) {
         this.name = name;
         this.age = age;
@@ -58,6 +71,9 @@ public class Employee {
         this.age = age;
     }
 
+    /**
+     * @return salary of person
+     */
     public double getSalary() {
         return salary;
     }
