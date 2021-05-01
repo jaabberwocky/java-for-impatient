@@ -1,4 +1,5 @@
 package com.tobias.corejava.exercises.ch02;
+
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
@@ -14,11 +15,12 @@ public class Ex1 {
         } else {
             month = date.getMonthValue();
         }
-
-        System.out.printf("Calendar for Year %s Month %s%n",
-                Integer.toString(date.getYear()),
-                Integer.toString(date.getMonthValue()));
+        String s = String.format("Year [%s] Month [%s]",
+                date.getYear(),
+                date.getMonthValue());
+        System.out.println(" " + s);
         System.out.println(" Sun Mon Tue Wed Thu Fri Sat");
+
         DayOfWeek weekday = date.getDayOfWeek();
         int value = weekday.getValue(); // 1 = Monday, ... 7 = Sunday
 
