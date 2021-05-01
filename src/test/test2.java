@@ -2,6 +2,7 @@ import com.tobias.corejava.exercises.ch02.Point;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @SuppressWarnings("MoveFieldAssignmentToInitializer")
@@ -9,14 +10,9 @@ public class test2 {
 
     protected Point p;
 
-    @BeforeAll
-    static void initAll() {
-
-    }
-
     @BeforeEach
     void setUp() {
-        p = new Point(4,5);
+        p = new Point(4, 5);
     }
 
     @Test
