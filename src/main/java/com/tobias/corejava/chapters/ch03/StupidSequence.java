@@ -26,4 +26,9 @@ public class StupidSequence implements Channel, IntSequence {
     public boolean hasNext() {
         return this.isOpen();
     }
+
+    @Override
+    public String sayWhat() {
+        return "StupidSequence say what!";
+    }
 }

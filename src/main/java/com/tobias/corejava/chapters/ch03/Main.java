@@ -42,6 +42,11 @@ public class Main {
             ctr++;
         }
 
+        // checking default methods
+        System.out.println(fib.sayWhat());
+        System.out.println(sq.sayWhat());
+        System.out.println(ss.sayWhat());
+
         // lambda expressions
         var myFirstString = "Hello";
         var mySecondString = "World";

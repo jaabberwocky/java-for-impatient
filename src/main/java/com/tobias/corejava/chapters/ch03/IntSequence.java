@@ -14,4 +14,8 @@ public interface IntSequence {
         }
         return count == 0 ? 0 : sum/count;
     }
+
+    default String sayWhat() {
+        return "Say what!?";
+    }
 }
